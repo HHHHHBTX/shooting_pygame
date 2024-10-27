@@ -1,35 +1,22 @@
-# -*- coding:utf-8 -*-
-# @author: 木子川
-# @Email:  m21z50c71@163.com
-# @VX：fylaicai
 
 import pygame
 import sys
 import random
-
-# 初始化 Pygame
 pygame.init()
-
-# 定义常量
 WIDTH, HEIGHT = 800, 600
 FPS = 60
 
-# 创建游戏窗口
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("弹幕射击小游戏")
 
-# 定义颜色
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
-
-# 定义角色
 player_size = 32
 player_pos = [WIDTH // 2, HEIGHT - player_size * 2]
 player_speed = 2
-player_velocity = [0, 0]  # 速度向量
+player_velocity = [0, 0] 
 
-# 定义敌人
 enemy_size = 25
 enemy_speed = 2
 enemies = []
